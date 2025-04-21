@@ -4,7 +4,7 @@ $suspiciousDirectoryKeywords = @("ProgramData", "Temp", "Tmp", "Users\Public", "
 
 # User Prompt
 Write-Host "`nSelect an option:`n"
-Write-Host "1. List all file paths for all Scheduled Tasks (no filtering)"
+Write-Host "1. List all Scheduled Tasks (no filtering)"
 Write-Host "2. Only list Scheduled Tasks with the predefined file extensions."
 Write-Host "3. Only list Scheduled Tasks with the predefined file extensions that are also in the predefined suspicious directory list.`n"
 
