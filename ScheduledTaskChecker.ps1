@@ -112,11 +112,11 @@ foreach ($task in $tasks) {
 
         if ($hasMatch) {
             $results += [PSCustomObject]@{
-                TaskName         = $taskName
-                TaskPath         = $taskPath
-                Execute          = $exePath
-                Arguments        = $arguments
-                WorkingDirectory = $workingDir
+                TaskName         = " " + $taskName # Outputs will have spaces before they begin to avoid Excel auto-functioning outputs beginning with "="
+                TaskPath         = " " + $taskPath
+                Execute          = " " + $exePath
+                Arguments        = " " + $arguments
+                WorkingDirectory = " " + $workingDir
             }
         }
     }
